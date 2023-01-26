@@ -1,4 +1,5 @@
-# DATA2410 2023
+# DATA2410 Networking and cloud computing
+<a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DATA2410/2022/H%C3%98ST"> Course description </a>
 <table>
 <tr>
 <td>
