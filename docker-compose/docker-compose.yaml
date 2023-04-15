@@ -1,1 +1,43 @@
+version: '3'
+services:
+ nginx1:
+  build: nginx1/
+  image: nginx1
+  container_name: nginx
+  tty: true
+  ports:
+   - "8080:80"
+  networks:
+   customnetwork:
+    ipv4_address: 172.31.82.12
 
+
+ nginx2:
+  build: nginx2/
+  image: nginx2
+  container_name: nginx2
+  tty: true
+  ports:
+   - "8081:80"
+  networks:
+   customnetwork:
+    ipv4_address: 172.31.82.13
+
+
+ nginx3:
+  build: nginx3/
+  image: nginx3
+  container_name: nginx3
+  tty: true
+  ports:
+   - "8082:80"
+  networks:
+   customnetwork:
+    ipv4_address: 172.31.82.14
+networks:
+ customnetwork:
+  driver: bridge
+  ipam:
+   config:
+    - subnet: 172.31.80.0/20
+      gateway: 172.31.80.1
