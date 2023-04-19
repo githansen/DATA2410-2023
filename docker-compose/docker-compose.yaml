@@ -40,4 +40,3 @@ networks:
   ipam:
    config:
     - subnet: 172.31.80.0/20
-      gateway: 172.31.80.1
